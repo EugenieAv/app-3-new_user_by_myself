@@ -1,0 +1,6 @@
+.item {
+    border: rgba(0, 0, 0, 0.4) 1px solid;
+    border-radius: 4px;
+    padding: 0.4rem 0.5rem;
+    margin-block-end: 5px;
+}
