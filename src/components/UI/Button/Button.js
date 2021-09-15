@@ -4,9 +4,9 @@ import styles from './Button.module.css';
 
 const Button = (props) => {
     return(
-        <div className={styles["btn-submit"]} type={props.type}>
+        <button className={styles["btn-submit"]} type={props.type || 'button' } onClick={props.onClick}>
             {props.children}
-        </div>
+        </button>
     );
 };
 

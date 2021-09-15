@@ -1,15 +1,23 @@
 import React from 'react';
 import UserItem from '../UserItem/UserItem';
+import Card from '../../UI/Card/Card';
 
 import styles from './UserList.module.css';
 
 const UserList = (props) => {
+
     return(
-        <ul className={styles.list} >
-            {props.users.map((user) => 
-                <UserItem username={user.username} age={user.age} key={Math.random()} />
-            )}
-        </ul>
+        <Card className={styles.users}>
+            <ul>
+                {props.users.map(user=>
+                    <UserItem 
+                        key={user.id}
+                        username={user.username}
+                        age={user.age}
+                    />
+                )}
+            </ul>
+        </Card>
     );
 
 };

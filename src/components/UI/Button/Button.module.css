@@ -3,6 +3,17 @@
     color: white;
     width: 100%;
     display: inline;
-    padding: 5px;
+    padding: 0.25rem 1rem;
     border-radius: 1px;
+    cursor: pointer;
+    font: inherit;
+    border: 1px solid rgb(114, 35, 126);
 }
+
+.btn-submit:hover,
+.btn-submit:active {
+    background-color: lightseagreen;
+}
+.btn-submit:focus {
+     outline: none;
+ }  
