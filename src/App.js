@@ -25,10 +25,10 @@ const App = () => {
 
 
   return (
-    <div >
+    <>
       <AddUser addUserToList={addUserToListHandler} />
       <UserList users={listingUsers} />
-    </div>
+    </>
   );
 }
 
